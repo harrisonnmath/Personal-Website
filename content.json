@@ -65,6 +65,162 @@
       "description": "Norm inflation and instantaneous loss of bounded Wᵏ,¹ control for inviscid SQG, for every integer k ≥ 3.",
       "url": "",
       "detail": "sqg"
+    },
+    {
+      "detail": "euler-logarithmic",
+      "title": "Ill-Posedness of the 2D Euler Equations in a Logarithmically Refined Critical Sobolev Space",
+      "authors": "Elaine Cozzi, Nicholas Harrison, and Zachary Radke",
+      "status": "Preprint · arXiv:2510.20773 · 2025",
+      "description": "Strong ill-posedness persists under logarithmic refinements of the critical H² velocity norm, up to the exponent α = 1/2.",
+      "url": "assets/papers/euler-logarithmic-illposedness.pdf",
+      "source": "https://arxiv.org/abs/2510.20773",
+      "explanations": {
+        "idea": [
+          {
+            "type": "heading",
+            "text": "Can a little extra smoothness prevent instability?"
+          },
+          {
+            "type": "paragraph",
+            "text": "A logarithmic weight strengthens the critical Sobolev norm without requiring an additional positive power of differentiability. This paper asks whether that small improvement restores control of the Euler evolution."
+          }
+        ],
+        "results": [
+          {
+            "type": "heading",
+            "text": "Ill-posedness through the logarithmic threshold"
+          },
+          {
+            "type": "paragraph",
+            "text": "The paper establishes strong ill-posedness for 2D Euler in the logarithmically refined critical spaces H²,α for α ≤ 1/2. Consult the paper for the full hypotheses and precise norm-inflation formulation."
+          }
+        ],
+        "proof": [
+          {
+            "type": "heading",
+            "text": "Stretching turns small oscillations into large norms."
+          },
+          {
+            "type": "step",
+            "text": "Construct small initial vorticity that generates a large derivative of the particle trajectory map.",
+            "title": "Create Lagrangian deformation"
+          },
+          {
+            "type": "step",
+            "text": "Add a localized, highly oscillatory perturbation whose transport by that map amplifies its norm.",
+            "title": "Amplify an oscillation"
+          },
+          {
+            "type": "step",
+            "text": "Combine countably many local constructions while keeping their interactions small.",
+            "title": "Patch the local constructions"
+          }
+        ]
+      }
+    },
+    {
+      "detail": "euler-smoothness",
+      "title": "Well-Posedness for the Euler Equations in Function Spaces of Generalized Smoothness",
+      "authors": "Nicholas Harrison and Zachary Radke",
+      "status": "Preprint · arXiv:2510.02626 · 2025",
+      "description": "Existence and well-posedness at critical smoothness with additional slowly varying weights, together with a continuation criterion and two-dimensional global existence.",
+      "url": "assets/papers/euler-generalized-smoothness.pdf",
+      "source": "https://arxiv.org/abs/2510.02626",
+      "explanations": {
+        "idea": [
+          {
+            "type": "heading",
+            "text": "Measuring smoothness between the usual scales"
+          },
+          {
+            "type": "paragraph",
+            "text": "Slowly varying weights distinguish functions that have the same critical differentiability exponent. They provide finer control than the exponent alone."
+          }
+        ],
+        "results": [
+          {
+            "type": "heading",
+            "text": "A weighted route to well-posedness"
+          },
+          {
+            "type": "paragraph",
+            "text": "For generalized Besov and Triebel–Lizorkin spaces at s = d/p + 1, sufficiently fast growth of the slowly varying weight yields local solutions under the stated parameter assumptions. A Beale–Kato–Majda-type continuation criterion gives global existence in two dimensions."
+          }
+        ],
+        "proof": [
+          {
+            "type": "heading",
+            "text": "Control the equation one frequency scale at a time."
+          },
+          {
+            "type": "step",
+            "text": "Use Littlewood–Paley decompositions to track the slowly varying weights across frequency scales.",
+            "title": "Resolve the frequency scales"
+          },
+          {
+            "type": "step",
+            "text": "Establish weighted product and commutator bounds for the transport nonlinearity.",
+            "title": "Estimate the nonlinear interactions"
+          },
+          {
+            "type": "step",
+            "text": "Use the resulting a priori estimates to construct local solutions, then apply the continuation criterion in two dimensions.",
+            "title": "Construct and continue solutions"
+          }
+        ]
+      }
+    },
+    {
+      "detail": "euler-critical",
+      "title": "Local Existence for the 2D Euler Equations in a Critical Sobolev Space",
+      "authors": "Elaine Cozzi and Nicholas Harrison",
+      "status": "Nonlinear Analysis 261 · December 2025",
+      "description": "Short-time existence with vorticity in W²,¹(ℝ²), with global persistence of that regularity under an additional Dini continuity assumption.",
+      "url": "assets/papers/euler-critical-sobolev.pdf",
+      "source": "https://arxiv.org/abs/2409.19418",
+      "explanations": {
+        "idea": [
+          {
+            "type": "heading",
+            "text": "What happens at the L¹ endpoint?"
+          },
+          {
+            "type": "paragraph",
+            "text": "The endpoint W²,¹ vorticity space requires estimates that do not follow from the usual Lᵖ theory for p > 1."
+          }
+        ],
+        "results": [
+          {
+            "type": "heading",
+            "text": "Local existence and a conditional global result"
+          },
+          {
+            "type": "paragraph",
+            "text": "Initial vorticity in W²,¹(ℝ²) admits a short-time solution retaining this regularity. If the initial vorticity is also Dini continuous, the regularity persists globally. The global statement needs this additional assumption."
+          }
+        ],
+        "proof": [
+          {
+            "type": "heading",
+            "text": "Endpoint estimates and compactness"
+          },
+          {
+            "type": "step",
+            "text": "Use Lorentz-space estimates to bound the velocity gradient and close the a priori inequality.",
+            "title": "Control the velocity gradient"
+          },
+          {
+            "type": "step",
+            "text": "Approximate by smooth solutions and obtain uniform W²,¹ bounds. Address equiintegrability and tightness when taking limits in L¹.",
+            "title": "Pass to a weak solution"
+          },
+          {
+            "type": "step",
+            "text": "Use the additional modulus of continuity to control the velocity gradient and continue the regularity for all time.",
+            "title": "Use Dini continuity for global control"
+          }
+        ]
+      }
     }
   ],
   "courses": [

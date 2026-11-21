@@ -20,7 +20,7 @@ Open `http://127.0.0.1:3000/editor.html`. Edit your introduction, card titles, d
 
 The editor on a static hosted site can preview changes and download an updated `content.json`; it cannot write to GitHub or alter the live site. Replace the local file and commit it to publish. Draft previews use session storage in the current browser; they are not a published or durable source of truth.
 
-Under **SQG paper explanations**, edit **The idea**, **Main results**, and **Proof ideas**, including headings, equations, notes, and expandable proof step titles and explanations. These fields use plain text; no HTML is needed. Preview changes and open Research → Explore the paper to review them, then save to local files. The explanations are stored in `content.json` under `paperPanels`.
+Under **Papers & projects**, each paper has an **About the paper & proof** section. Edit **The idea**, **Main results**, and **Proof ideas**, including headings, equations, notes, and expandable proof step titles and explanations. These fields use plain text; no HTML is needed. Preview changes and open Research → Explore the paper to review them, then save to local files. The original SQG explanations remain under `paperPanels` in `content.json`; other papers store their own `explanations`. Keep each paper page ID unique. PDF files are stored in `assets/papers/`, with arXiv records linked separately.
 
 You can also ask Codex to edit `content.json` directly. For design changes ask it to edit `style.css`; for page structure, `app.js`. All six card links are configurable and can point to built-in pages or external URLs. Built-in destinations: `#research`, `#teaching`, `#talks`, `#lab`, `#about`, `#contact`. The SQG explorer lives at `#sqg`.
 
