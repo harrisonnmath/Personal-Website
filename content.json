@@ -1,0 +1,179 @@
+{
+  "name": "Nicholas Harrison",
+  "role": "Postdoctoral Fellow in Mathematics",
+  "affiliation": "Simon Fraser University",
+  "intro": "Fluid equations, nonlocal interactions, and the influence of geometry.",
+  "bio": "I study partial differential equations, with interests in fluid dynamics, regularity and ill-posedness, and aggregation–diffusion equations on curved spaces.",
+  "photo": "",
+  "email": "",
+  "cv": "",
+  "cards": [
+    {
+      "id": "research",
+      "title": "Research",
+      "description": "Papers, projects & proof ideas",
+      "url": "#research",
+      "illustration": "flow",
+      "color": "cream"
+    },
+    {
+      "id": "teaching",
+      "title": "Teaching",
+      "description": "Courses, lecture notes & tutorials",
+      "url": "#teaching",
+      "illustration": "book",
+      "color": "sage"
+    },
+    {
+      "id": "talks",
+      "title": "Talks & conferences",
+      "description": "Presentations & scientific gatherings",
+      "url": "#talks",
+      "illustration": "talk",
+      "color": "cream"
+    },
+    {
+      "id": "lab",
+      "title": "Math lab",
+      "description": "Interactive mathematical explorations",
+      "url": "#lab",
+      "illustration": "curve",
+      "color": "clay"
+    },
+    {
+      "id": "about",
+      "title": "Off the clock",
+      "description": "Climbing, nature & other interests",
+      "url": "#about",
+      "illustration": "nature",
+      "color": "cream"
+    },
+    {
+      "id": "contact",
+      "title": "CV & contact",
+      "description": "Academic background & getting in touch",
+      "url": "#contact",
+      "illustration": "mail",
+      "color": "sage"
+    }
+  ],
+  "papers": [
+    {
+      "title": "Strong ill-posedness of the surface quasi-geostrophic equations in Wᵏ,¹(ℝ²)",
+      "authors": "Elaine Cozzi, Nicholas Harrison, and Zachary Radke",
+      "status": "Manuscript · November 2026",
+      "description": "Norm inflation and instantaneous loss of bounded Wᵏ,¹ control for inviscid SQG, for every integer k ≥ 3.",
+      "url": "",
+      "detail": "sqg"
+    }
+  ],
+  "courses": [
+    {
+      "title": "MATH 303 · Mathematics of Sports",
+      "term": "Simon Fraser University · Fall 2026",
+      "description": "Mathematical models of motion, probability, judging, game theory, and sporting competition.",
+      "url": ""
+    }
+  ],
+  "talks": [],
+  "about": "Away from mathematics, I enjoy rock climbing, spending time outdoors, and looking for mushrooms. This is a place for occasional photographs and notes from outside the office.",
+  "aboutLinks": [],
+  "researchIntro": "My research connects the analysis of nonlinear PDEs with the mechanisms that drive concentration, transport, and loss of regularity.",
+  "teachingIntro": "Models become more memorable when you can experiment with them. My teaching connects mathematical ideas with concrete questions, computation, and applications.",
+  "paperPanels": {
+    "idea": [
+      {
+        "type": "heading",
+        "text": "A tiny change can hide a large difference."
+      },
+      {
+        "type": "paragraph",
+        "text": "SQG describes a scalar carried by a fluid whose velocity is determined by that same scalar. This feedback makes its mathematical behavior subtle."
+      },
+      {
+        "type": "paragraph",
+        "text": "Two initial states can be arbitrarily close in a norm measuring their derivatives, yet their smooth solutions can later be arbitrarily far apart in that norm."
+      },
+      {
+        "type": "note",
+        "text": "What you measure matters: the instability concerns derivatives in L¹. It does not assert that the temperature itself becomes arbitrarily large."
+      },
+      {
+        "type": "subheading",
+        "text": "Why is this surprising?"
+      },
+      {
+        "type": "paragraph",
+        "text": "The W³,¹ norm controls the velocity gradient. That useful estimate still does not close the highest-order derivative estimate."
+      }
+    ],
+    "results": [
+      {
+        "type": "heading",
+        "text": "Two forms of instability"
+      },
+      {
+        "type": "subheading",
+        "text": "Norm inflation near a smooth background"
+      },
+      {
+        "type": "paragraph",
+        "text": "Fix a nonconstant smooth, compactly supported background solution and a positive target time τ within its smooth lifespan. For every ε, M > 0 and integer k ≥ 3, a smooth compactly supported perturbation can be chosen with initial Wᵏ,¹ distance below ε and distance at τ above M. Its solution exists through τ."
+      },
+      {
+        "type": "equation",
+        "text": "‖θ₀ − θ̄₀‖_{Wᵏ,¹} < ε     ‖θ(τ) − θ̄(τ)‖_{Wᵏ,¹} > M"
+      },
+      {
+        "type": "subheading",
+        "text": "Instantaneous loss of bounded norm control"
+      },
+      {
+        "type": "paragraph",
+        "text": "Arbitrarily close to each nonconstant smooth compactly supported datum, there is compactly supported Wᵏ,¹ data whose corresponding solution satisfies"
+      },
+      {
+        "type": "equation",
+        "text": "ess sup_{0<t<T′} ‖θ(t)‖_{Wᵏ,¹} = ∞   for every 0 < T′ ≤ T."
+      },
+      {
+        "type": "paragraph",
+        "text": "This essential-supremum statement does not assert that the norm is infinite at every positive time. See Theorems 1.1 and 1.2 for the precise formulation."
+      }
+    ],
+    "proof": [
+      {
+        "type": "heading",
+        "text": "The nonlocal interaction drives growth."
+      },
+      {
+        "type": "equation",
+        "text": "∂ₜη + ū · ∇η + (R^{⊥}η) · ∇θ̄ + (R^{⊥}η) · ∇η = 0"
+      },
+      {
+        "type": "paragraph",
+        "text": "The perturbation creates a velocity that moves the background scalar. After local approximation and a change of coordinates, this gives a nonconstant multiplier homogeneous of degree zero."
+      },
+      {
+        "type": "step",
+        "title": "1. Find an amplifying profile",
+        "text": "The Bonami–Poornima theorem supplies a profile with a large multiplier response relative to the initial derivative norm."
+      },
+      {
+        "type": "step",
+        "title": "2. Dilute the nonlinear error",
+        "text": "Distributing the perturbation among many smaller packets controls self-interaction while preserving the desired amplification."
+      },
+      {
+        "type": "step",
+        "title": "3. Concentrate the packets",
+        "text": "A sufficiently small spatial scale controls the errors from approximating the background flow and scalar gradient."
+      },
+      {
+        "type": "step",
+        "title": "4. Pass to a single limiting datum",
+        "text": "Iterated norm inflation and stability in an auxiliary Sobolev–Lorentz solution class yield one datum with unbounded norm control on every initial time interval."
+      }
+    ]
+  }
+}
