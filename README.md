@@ -26,7 +26,7 @@ You can also ask Codex to edit `content.json` directly. For design changes ask i
 
 ## Research results map
 
-The Research page links to `#results-map`. Select a result to see its scope, assumptions, proof mechanism, and source. The logarithmic-weight slider compares the two sides of α = 1/2; the endpoint vorticity and SQG branches are shown separately. Edit node text under **Research results map** in the editor. These labels and descriptions live in `content.json` under `resultsMap`; the layout and interactions live in `results-map.js` and `style.css`.
+The Research page links to `#results-map`. Select a result to see its scope, assumptions, proof mechanism, and source. The connected diagram branches from a central question into endpoint integrability, refined smoothness, and a different transport equation. Selecting a result highlights immediate connections. Labeled solid connections show research directions and extensions; dashed connections show complementary results and related ideas. Edit node text under **Research results map** in the editor. These labels and descriptions live in `content.json` under `resultsMap`; the layout and interactions live in `results-map.js` and `style.css`.
 
 ## Profile, CV and PDFs
 

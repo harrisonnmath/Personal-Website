@@ -333,8 +333,8 @@
     ]
   },
   "resultsMap": {
-    "title": "Where regularity holds—and where it breaks",
-    "intro": "Follow three branches of my work on nonlinear transport. Select a result to see its assumptions, proof mechanism, and paper.",
+    "title": "How the questions connect",
+    "intro": "Start with nonlinear transport, follow a research direction, and see where the results meet. Select any result to trace its connections and read about the argument.",
     "nodes": [
       {
         "id": "log-ill",
@@ -345,7 +345,8 @@
         "statement": "Arbitrarily small initial velocity in the refined norm can produce an unbounded limsup of that norm as time tends to zero.",
         "assumptions": "2D incompressible Euler on ℝ²; 0 < α ≤ 1/2. This concerns growth of a regularity norm, not loss of smoothness at every positive time.",
         "mechanism": "Large Lagrangian deformation amplifies oscillations; weakly interacting patches combine local norm inflation.",
-        "paper": "euler-logarithmic"
+        "paper": "euler-logarithmic",
+        "graphTitle": "The instability side of the boundary"
       },
       {
         "id": "log-well",
@@ -356,7 +357,8 @@
         "statement": "For α > 1/2, the generalized-smoothness result gives global well-posedness in two dimensions.",
         "assumptions": "2D incompressible Euler; velocity in H²,α. The extra logarithmic weight supplies the summability needed at the critical exponent.",
         "mechanism": "Weighted frequency estimates and a vorticity continuation criterion control the solution.",
-        "paper": "euler-smoothness"
+        "paper": "euler-smoothness",
+        "graphTitle": "The positive side of the boundary"
       },
       {
         "id": "generalized",
@@ -367,7 +369,8 @@
         "statement": "Critical Besov and Triebel–Lizorkin spaces support well-posedness when the slowly varying weight satisfies the theorem’s summability condition.",
         "assumptions": "1 < p,q < ∞. The admissible weight class differs between the two space families; see Theorem 1.2 and Corollary 1.3 for the full conditions.",
         "mechanism": "Littlewood–Paley decompositions, weighted commutator estimates, and a Beale–Kato–Majda-type criterion.",
-        "paper": "euler-smoothness"
+        "paper": "euler-smoothness",
+        "graphTitle": "Well-posedness with weighted smoothness"
       },
       {
         "id": "endpoint-local",
@@ -378,7 +381,8 @@
         "statement": "Vorticity retains W²,¹ regularity for a short time.",
         "assumptions": "2D Euler in vorticity form. This is an existence result; endpoint singular-integral difficulties prevent an automatic velocity well-posedness conclusion.",
         "mechanism": "Lorentz-space estimates and compactness of smooth approximations handle the endpoint.",
-        "paper": "euler-critical"
+        "paper": "euler-critical",
+        "graphTitle": "Local existence"
       },
       {
         "id": "endpoint-global",
@@ -389,7 +393,8 @@
         "statement": "An additional Dini continuity assumption on the initial vorticity yields global persistence of W²,¹ regularity.",
         "assumptions": "The extra continuity hypothesis is essential to this theorem. The local result alone does not settle global persistence for every W²,¹ datum.",
         "mechanism": "Control of the velocity gradient closes the continuation argument.",
-        "paper": "euler-critical"
+        "paper": "euler-critical",
+        "graphTitle": "Global persistence"
       },
       {
         "id": "sqg",
@@ -400,7 +405,8 @@
         "statement": "The manuscript establishes norm inflation and unbounded essential supremum of the Wᵏ,¹ norm on every initial interval for constructed data.",
         "assumptions": "Inviscid SQG, rather than Euler. Unbounded essential supremum does not mean that the norm is infinite at every positive time.",
         "mechanism": "Nonlocal interaction with a smooth background drives amplification, followed by an iterative construction.",
-        "paper": "sqg"
+        "paper": "sqg",
+        "graphTitle": "Norm inflation & loss of norm control"
       }
     ]
   }
