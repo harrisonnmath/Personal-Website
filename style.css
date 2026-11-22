@@ -58,3 +58,7 @@
 /* Warm blush background from the approved mockup. */
 body{background-color:#f7ece5;background-image:radial-gradient(ellipse at 45% 0,#fff8ef99,transparent 75%)}
 .site-header,footer{border-color:#b28d62}
+
+/* Center the smaller notes’ artwork, clear of the lifted paper corners. */
+.noticeboard>.pinned-card:not([href="#research"])>.line-art{left:50%;right:auto;bottom:28px;transform:translateX(-50%)}
+@media(max-width:620px){.noticeboard>.pinned-card:not([href="#research"])>.line-art{bottom:22px}}
