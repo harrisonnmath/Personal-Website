@@ -70,9 +70,9 @@
       "detail": "euler-logarithmic",
       "title": "Ill-Posedness of the 2D Euler Equations in a Logarithmically Refined Critical Sobolev Space",
       "authors": "Elaine Cozzi, Nicholas Harrison, and Zachary Radke",
-      "status": "Preprint · arXiv:2510.20773 · 2025",
+      "status": "Journal of Dynamics and Differential Equations · 2026",
       "description": "Strong ill-posedness persists under logarithmic refinements of the critical H² velocity norm, up to the exponent α = 1/2.",
-      "url": "assets/papers/euler-logarithmic-illposedness.pdf",
+      "url": "assets/papers/euler-logarithmic-illposedness-author.pdf",
       "source": "https://arxiv.org/abs/2510.20773",
       "explanations": {
         "idea": [
@@ -116,15 +116,17 @@
             "title": "Patch the local constructions"
           }
         ]
-      }
+      },
+      "publisher": "https://doi.org/10.1007/s10884-026-10532-z",
+      "pdfLabel": "Author PDF"
     },
     {
       "detail": "euler-smoothness",
       "title": "Well-Posedness for the Euler Equations in Function Spaces of Generalized Smoothness",
       "authors": "Nicholas Harrison and Zachary Radke",
-      "status": "Preprint · arXiv:2510.02626 · 2025",
+      "status": "Journal of Differential Equations 477 (2026), 114533",
       "description": "Existence and well-posedness at critical smoothness with additional slowly varying weights, together with a continuation criterion and two-dimensional global existence.",
-      "url": "assets/papers/euler-generalized-smoothness.pdf",
+      "url": "assets/papers/euler-generalized-smoothness-author.pdf",
       "source": "https://arxiv.org/abs/2510.02626",
       "explanations": {
         "idea": [
@@ -168,15 +170,17 @@
             "title": "Construct and continue solutions"
           }
         ]
-      }
+      },
+      "publisher": "https://doi.org/10.1016/j.jde.2026.114533",
+      "pdfLabel": "Author PDF"
     },
     {
       "detail": "euler-critical",
       "title": "Local Existence for the 2D Euler Equations in a Critical Sobolev Space",
       "authors": "Elaine Cozzi and Nicholas Harrison",
-      "status": "Nonlinear Analysis 261 · December 2025",
+      "status": "Nonlinear Analysis 261 (2025), 113846",
       "description": "Short-time existence with vorticity in W²,¹(ℝ²), with global persistence of that regularity under an additional Dini continuity assumption.",
-      "url": "assets/papers/euler-critical-sobolev.pdf",
+      "url": "assets/papers/euler-critical-sobolev-author.pdf",
       "source": "https://arxiv.org/abs/2409.19418",
       "explanations": {
         "idea": [
@@ -220,7 +224,9 @@
             "title": "Use Dini continuity for global control"
           }
         ]
-      }
+      },
+      "publisher": "https://doi.org/10.1016/j.na.2025.113846",
+      "pdfLabel": "Author PDF"
     }
   ],
   "courses": [
