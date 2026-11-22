@@ -62,3 +62,9 @@ body{background-color:#f7ece5;background-image:radial-gradient(ellipse at 45% 0,
 /* Center the smaller notes’ artwork, clear of the lifted paper corners. */
 .noticeboard>.pinned-card:not([href="#research"])>.line-art{left:50%;right:auto;bottom:28px;transform:translateX(-50%)}
 @media(max-width:620px){.noticeboard>.pinned-card:not([href="#research"])>.line-art{bottom:22px}}
+
+/* Bring the research heading and description closer to its illustration. */
+.noticeboard>.pinned-card[href="#research"]{display:flex;flex-direction:column;justify-content:flex-end;text-align:center}
+.noticeboard>.pinned-card[href="#research"] h2,.noticeboard>.pinned-card[href="#research"] p{width:100%;max-width:100%;margin-left:auto;margin-right:auto}
+@media(min-width:621px){.noticeboard>.pinned-card[href="#research"]{padding-top:90px;padding-bottom:300px}}
+@media(max-width:620px){.noticeboard>.pinned-card[href="#research"]{padding-top:45px;padding-bottom:120px}.noticeboard>.pinned-card[href="#research"]>.line-art{left:50%;right:auto;transform:translateX(-50%)}}
