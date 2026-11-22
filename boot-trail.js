@@ -10,21 +10,28 @@ let enabled = true;
 try { enabled = localStorage.getItem('boot-trail') !== 'off'; } catch {}
 let prints = [], previous = null, distance = 0, foot = 1, frame = 0;
 const lifetime = 1100, stride = 44;
-// Draw a complete boot sole once, with transparent tread grooves.
-const sole = document.createElement('canvas');sole.width=64;sole.height=104;
-const ink=sole.getContext('2d');
-ink.scale(2,2);ink.translate(16,24);ink.fillStyle='#566047';
-ink.beginPath();
-ink.moveTo(-3,-21);ink.bezierCurveTo(-11,-21,-12,-15,-11,-8);
-ink.bezierCurveTo(-11,0,-8,6,-6,9);ink.lineTo(5,9);
-ink.bezierCurveTo(5,4,10,0,10,-8);ink.bezierCurveTo(11,-16,6,-22,-3,-21);
-ink.closePath();ink.fill();
-ink.beginPath();ink.roundRect(-6,14,13,11,3);ink.fill();
-ink.globalCompositeOperation='destination-out';ink.lineWidth=1.8;ink.lineCap='round';
-for(const y of [-13,-6,1]){ink.beginPath();ink.moveTo(-8,y);ink.lineTo(-1,y+3);ink.lineTo(7,y);ink.stroke();}
-ink.beginPath();ink.moveTo(0,-18);ink.lineTo(0,5);ink.stroke();
-ink.beginPath();ink.moveTo(-4,19);ink.lineTo(5,19);ink.stroke();
-ink.beginPath();ink.moveTo(.5,16);ink.lineTo(.5,23);ink.stroke();
+// Chunky hiking-boot tread: curved toe rim, separate lugs, and curved heel.
+const sole=document.createElement('canvas');sole.width=96;sole.height=144;
+const ink=sole.getContext('2d');ink.scale(2,2);ink.translate(24,32);ink.fillStyle='#424a38';
+function tread(points){ink.beginPath();points.forEach(([x,y],i)=>i?ink.lineTo(x,y):ink.moveTo(x,y));ink.closePath();ink.fill();}
+ink.beginPath();ink.moveTo(-17,-12);ink.bezierCurveTo(-18,-34,13,-38,17,-15);ink.lineTo(10,-11);ink.bezierCurveTo(8,-26,-9,-27,-11,-9);ink.closePath();ink.fill();
+for(let row=0;row<4;row++){
+ const y=-7+row*7,outer=17-row*1.3,inner=8-row*.8;
+ tread([[-outer,y],[-inner,y-3],[-inner+1,y+2],[-outer+1,y+5]]);
+ tread([[inner,y-3],[outer,y-1],[outer-1,y+4],[inner-1,y+2]]);
+}
+for(let row=0;row<3;row++){
+ const y=-9+row*8;
+ tread([[-3,y],[-6,y+4],[-5,y+7],[-1,y+3]]);
+ tread([[1,y+3],[5,y+7],[6,y+4],[3,y]]);
+}
+// A distinct heel with widely spaced blocks and a rounded rear rim.
+tread([[-11,24],[-5,22],[-4,27],[-10,29]]);tread([[4,22],[11,24],[10,29],[4,27]]);
+ink.beginPath();ink.moveTo(-11,31);ink.quadraticCurveTo(0,42,12,31);ink.lineTo(9,27);ink.quadraticCurveTo(0,34,-8,27);ink.closePath();ink.fill();
+// Stable fine gaps give the tread an inked, slightly worn print texture.
+ink.globalCompositeOperation='destination-out';let grain=941;
+const random=()=>{grain=(grain*1664525+1013904223)>>>0;return grain/4294967296;};
+for(let i=0;i<260;i++){const x=random()*38-19,y=random()*72-33;ink.beginPath();ink.arc(x,y,.18+random()*.48,0,Math.PI*2);ink.fill();}
 function available(){return enabled && !reduced.matches && fine.matches && ctx;}
 function clear(){prints=[];previous=null;distance=0;cancelAnimationFrame(frame);frame=0;ctx?.clearRect(0,0,innerWidth,innerHeight);}
 function resize(){const ratio=Math.min(devicePixelRatio||1,2);canvas.width=innerWidth*ratio;canvas.height=innerHeight*ratio;canvas.style.width=innerWidth+'px';canvas.style.height=innerHeight+'px';ctx?.setTransform(ratio,0,0,ratio,0,0);clear();}
@@ -35,7 +42,7 @@ function draw(now){
  for(const p of prints){
   const fade=Math.min(1,(lifetime-(now-p.time))/750);
   ctx.save();ctx.translate(p.x,p.y);ctx.rotate(p.angle);ctx.scale(p.foot,1);ctx.globalAlpha=.28*fade;
-  ctx.drawImage(sole,-16,-24,32,52);
+  ctx.drawImage(sole,-18,-24,36,54);
   ctx.restore();
  }
  if(prints.length)frame=requestAnimationFrame(draw);
