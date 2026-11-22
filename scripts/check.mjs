@@ -23,7 +23,7 @@ for(const paper of d.papers){
 }
 assert.equal(typeof d.notebook.title,'string');assert(Array.isArray(d.notebook.pages));
 for(const page of d.notebook.pages){for(const key of ['photo','caption','title','alt','date'])assert.equal(typeof page[key],'string');}
-for(const f of ['app.js','editor.js','notebook.js','boot-trail.js','scripts/serve.mjs','scripts/build.mjs'])execFileSync(process.execPath,['--check',f]);
+for(const f of ['app.js','editor.js','notebook.js','scripts/serve.mjs','scripts/build.mjs'])execFileSync(process.execPath,['--check',f]);
 for(const f of ['index.html','editor.html','style.css','README.md','AGENTS.md','.github/workflows/pages.yml','assets/favicon.svg'])await access(f);
 const html=await readFile('index.html','utf8');assert(html.includes('viewport'));assert(html.includes('id="main"'));assert(!/https?:\/\/.*(?:cdn|googleapis)/.test(html));
 execFileSync(process.execPath,['scripts/check-notebook.mjs'],{stdio:'inherit'});
