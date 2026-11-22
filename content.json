@@ -11,7 +11,7 @@
     {
       "id": "research",
       "title": "Research",
-      "description": "Papers, projects & proof ideas",
+      "description": "Papers, projects & abstracts",
       "url": "#research",
       "illustration": "flow",
       "color": "cream"
@@ -54,7 +54,7 @@
       "title": "Strong Ill-Posedness of the Surface Quasi-Geostrophic Equations in Wᵏ,¹(ℝ²)",
       "authors": "Elaine Cozzi, Nicholas Harrison, and Zachary Radke",
       "status": "Manuscript · November 2026",
-      "description": "Norm inflation and instantaneous loss of bounded Wᵏ,¹ control for inviscid SQG, for every integer k ≥ 3.",
+      "description": "Small changes to the starting state of inviscid SQG can quickly become large when measured through spatial derivatives. We also construct starting states whose derivative norm has unbounded essential supremum on every initial time interval, which does not mean it is infinite at every positive time.",
       "url": "",
       "detail": "sqg"
     },
@@ -63,52 +63,9 @@
       "title": "Ill-Posedness of the 2D Euler Equations in a Logarithmically Refined Critical Sobolev Space",
       "authors": "Elaine Cozzi, Nicholas Harrison, and Zachary Radke",
       "status": "Journal of Dynamics and Differential Equations · 2026",
-      "description": "Strong ill-posedness persists under logarithmic refinements of the critical H² velocity norm, up to the exponent α = 1/2.",
+      "description": "Can a little extra smoothness prevent instability in an ideal two-dimensional fluid? We show that certain logarithmic improvements to the critical smoothness requirement still allow arbitrarily small starting states to develop very large regularity norms.",
       "url": "assets/papers/euler-logarithmic-illposedness-author.pdf",
       "source": "https://arxiv.org/abs/2510.20773",
-      "explanations": {
-        "idea": [
-          {
-            "type": "heading",
-            "text": "Can a little extra smoothness prevent instability?"
-          },
-          {
-            "type": "paragraph",
-            "text": "A logarithmic weight strengthens the critical Sobolev norm without requiring an additional positive power of differentiability. This paper asks whether that small improvement restores control of the Euler evolution."
-          }
-        ],
-        "results": [
-          {
-            "type": "heading",
-            "text": "Ill-posedness through the logarithmic threshold"
-          },
-          {
-            "type": "paragraph",
-            "text": "The paper establishes strong ill-posedness for 2D Euler in the logarithmically refined critical spaces H²,α for α ≤ 1/2. Consult the paper for the full hypotheses and precise norm-inflation formulation."
-          }
-        ],
-        "proof": [
-          {
-            "type": "heading",
-            "text": "Stretching turns small oscillations into large norms."
-          },
-          {
-            "type": "step",
-            "text": "Construct small initial vorticity that generates a large derivative of the particle trajectory map.",
-            "title": "Create Lagrangian deformation"
-          },
-          {
-            "type": "step",
-            "text": "Add a localized, highly oscillatory perturbation whose transport by that map amplifies its norm.",
-            "title": "Amplify an oscillation"
-          },
-          {
-            "type": "step",
-            "text": "Combine countably many local constructions while keeping their interactions small.",
-            "title": "Patch the local constructions"
-          }
-        ]
-      },
       "publisher": "https://doi.org/10.1007/s10884-026-10532-z",
       "pdfLabel": "Author PDF"
     },
@@ -117,52 +74,9 @@
       "title": "Well-Posedness for the Euler Equations in Function Spaces of Generalized Smoothness",
       "authors": "Nicholas Harrison and Zachary Radke",
       "status": "Journal of Differential Equations 477 (2026), 114533",
-      "description": "Existence and well-posedness at critical smoothness with additional slowly varying weights, together with a continuation criterion and two-dimensional global existence.",
+      "description": "We study how much smoothness is needed for the Euler equations to have a unique solution that depends continuously on its starting state. By measuring smoothness more finely across different spatial scales, we establish local well-posedness and show that the solutions persist globally in two dimensions under the stated assumptions.",
       "url": "assets/papers/euler-generalized-smoothness-author.pdf",
       "source": "https://arxiv.org/abs/2510.02626",
-      "explanations": {
-        "idea": [
-          {
-            "type": "heading",
-            "text": "Measuring smoothness between the usual scales"
-          },
-          {
-            "type": "paragraph",
-            "text": "Slowly varying weights distinguish functions that have the same critical differentiability exponent. They provide finer control than the exponent alone."
-          }
-        ],
-        "results": [
-          {
-            "type": "heading",
-            "text": "A weighted route to well-posedness"
-          },
-          {
-            "type": "paragraph",
-            "text": "For generalized Besov and Triebel–Lizorkin spaces at s = d/p + 1, sufficiently fast growth of the slowly varying weight yields local solutions under the stated parameter assumptions. A Beale–Kato–Majda-type continuation criterion gives global existence in two dimensions."
-          }
-        ],
-        "proof": [
-          {
-            "type": "heading",
-            "text": "Control the equation one frequency scale at a time."
-          },
-          {
-            "type": "step",
-            "text": "Use Littlewood–Paley decompositions to track the slowly varying weights across frequency scales.",
-            "title": "Resolve the frequency scales"
-          },
-          {
-            "type": "step",
-            "text": "Establish weighted product and commutator bounds for the transport nonlinearity.",
-            "title": "Estimate the nonlinear interactions"
-          },
-          {
-            "type": "step",
-            "text": "Use the resulting a priori estimates to construct local solutions, then apply the continuation criterion in two dimensions.",
-            "title": "Construct and continue solutions"
-          }
-        ]
-      },
       "publisher": "https://doi.org/10.1016/j.jde.2026.114533",
       "pdfLabel": "Author PDF"
     },
@@ -171,52 +85,9 @@
       "title": "Local Existence for the 2D Euler Equations in a Critical Sobolev Space",
       "authors": "Elaine Cozzi and Nicholas Harrison",
       "status": "Nonlinear Analysis 261 (2025), 113846",
-      "description": "Short-time existence with vorticity in W²,¹(ℝ²), with global persistence of that regularity under an additional Dini continuity assumption.",
+      "description": "We prove that a two-dimensional ideal fluid retains a critical measure of vorticity smoothness for a short time, even at an endpoint where standard estimates are difficult to use. If the initial vorticity also satisfies a Dini continuity condition, that regularity persists for all time.",
       "url": "assets/papers/euler-critical-sobolev-author.pdf",
       "source": "https://arxiv.org/abs/2409.19418",
-      "explanations": {
-        "idea": [
-          {
-            "type": "heading",
-            "text": "What happens at the L¹ endpoint?"
-          },
-          {
-            "type": "paragraph",
-            "text": "The endpoint W²,¹ vorticity space requires estimates that do not follow from the usual Lᵖ theory for p > 1."
-          }
-        ],
-        "results": [
-          {
-            "type": "heading",
-            "text": "Local existence and a conditional global result"
-          },
-          {
-            "type": "paragraph",
-            "text": "Initial vorticity in W²,¹(ℝ²) admits a short-time solution retaining this regularity. If the initial vorticity is also Dini continuous, the regularity persists globally. The global statement needs this additional assumption."
-          }
-        ],
-        "proof": [
-          {
-            "type": "heading",
-            "text": "Endpoint estimates and compactness"
-          },
-          {
-            "type": "step",
-            "text": "Use Lorentz-space estimates to bound the velocity gradient and close the a priori inequality.",
-            "title": "Control the velocity gradient"
-          },
-          {
-            "type": "step",
-            "text": "Approximate by smooth solutions and obtain uniform W²,¹ bounds. Address equiintegrability and tightness when taking limits in L¹.",
-            "title": "Pass to a weak solution"
-          },
-          {
-            "type": "step",
-            "text": "Use the additional modulus of continuity to control the velocity gradient and continue the regularity for all time.",
-            "title": "Use Dini continuity for global control"
-          }
-        ]
-      },
       "publisher": "https://doi.org/10.1016/j.na.2025.113846",
       "pdfLabel": "Author PDF"
     }
@@ -493,108 +364,19 @@
   "aboutLinks": [],
   "researchIntro": "My research connects the analysis of nonlinear PDEs with the mechanisms that drive concentration, transport, and loss of regularity.",
   "teachingIntro": "Courses I have taught and supported at Simon Fraser University, Oregon State University, and Western Washington University.",
-  "paperPanels": {
-    "idea": [
-      {
-        "type": "heading",
-        "text": "A tiny change can hide a large difference."
-      },
-      {
-        "type": "paragraph",
-        "text": "SQG describes a scalar carried by a fluid whose velocity is determined by that same scalar. This feedback makes its mathematical behavior subtle."
-      },
-      {
-        "type": "paragraph",
-        "text": "Two initial states can be arbitrarily close in a norm measuring their derivatives, yet their smooth solutions can later be arbitrarily far apart in that norm."
-      },
-      {
-        "type": "note",
-        "text": "What you measure matters: the instability concerns derivatives in L¹. It does not assert that the temperature itself becomes arbitrarily large."
-      },
-      {
-        "type": "subheading",
-        "text": "Why is this surprising?"
-      },
-      {
-        "type": "paragraph",
-        "text": "The W³,¹ norm controls the velocity gradient. That useful estimate still does not close the highest-order derivative estimate."
-      }
-    ],
-    "results": [
-      {
-        "type": "heading",
-        "text": "Two forms of instability"
-      },
-      {
-        "type": "subheading",
-        "text": "Norm inflation near a smooth background"
-      },
-      {
-        "type": "paragraph",
-        "text": "Fix a nonconstant smooth, compactly supported background solution and a positive target time τ within its smooth lifespan. For every ε, M > 0 and integer k ≥ 3, a smooth compactly supported perturbation can be chosen with initial Wᵏ,¹ distance below ε and distance at τ above M. Its solution exists through τ."
-      },
-      {
-        "type": "equation",
-        "text": "‖θ₀ − θ̄₀‖_{Wᵏ,¹} < ε     ‖θ(τ) − θ̄(τ)‖_{Wᵏ,¹} > M"
-      },
-      {
-        "type": "subheading",
-        "text": "Instantaneous loss of bounded norm control"
-      },
-      {
-        "type": "paragraph",
-        "text": "Arbitrarily close to each nonconstant smooth compactly supported datum, there is compactly supported Wᵏ,¹ data whose corresponding solution satisfies"
-      },
-      {
-        "type": "equation",
-        "text": "ess sup_{0<t<T′} ‖θ(t)‖_{Wᵏ,¹} = ∞   for every 0 < T′ ≤ T."
-      },
-      {
-        "type": "paragraph",
-        "text": "This essential-supremum statement does not assert that the norm is infinite at every positive time. See Theorems 1.1 and 1.2 for the precise formulation."
-      }
-    ],
-    "proof": [
-      {
-        "type": "heading",
-        "text": "The nonlocal interaction drives growth."
-      },
-      {
-        "type": "equation",
-        "text": "∂ₜη + ū · ∇η + (R^{⊥}η) · ∇θ̄ + (R^{⊥}η) · ∇η = 0"
-      },
-      {
-        "type": "paragraph",
-        "text": "The perturbation creates a velocity that moves the background scalar. After local approximation and a change of coordinates, this gives a nonconstant multiplier homogeneous of degree zero."
-      },
-      {
-        "type": "step",
-        "title": "1. Find an amplifying profile",
-        "text": "The Bonami–Poornima theorem supplies a profile with a large multiplier response relative to the initial derivative norm."
-      },
-      {
-        "type": "step",
-        "title": "2. Dilute the nonlinear error",
-        "text": "Distributing the perturbation among many smaller packets controls self-interaction while preserving the desired amplification."
-      },
-      {
-        "type": "step",
-        "title": "3. Concentrate the packets",
-        "text": "A sufficiently small spatial scale controls the errors from approximating the background flow and scalar gradient."
-      },
-      {
-        "type": "step",
-        "title": "4. Pass to a single limiting datum",
-        "text": "Iterated norm inflation and stability in an auxiliary Sobolev–Lorentz solution class yield one datum with unbounded norm control on every initial time interval."
-      }
-    ]
-  },
   "notebook": {
     "title": "Off the clock",
     "subtitle": "Notes from beyond the blackboard",
     "pages": []
   },
   "conferencesOrganized": [
+    {
+      "title": "Math For All Corvallis Conference",
+      "date": "2026",
+      "venue": "Corvallis",
+      "description": "Co-organizer",
+      "url": ""
+    },
     {
       "title": "Math For All Corvallis Conference",
       "date": "2025",
@@ -607,29 +389,6 @@
       "date": "2024",
       "venue": "Corvallis",
       "description": "Co-organizer",
-      "url": ""
-    }
-  ],
-  "conferencesAttended": [
-    {
-      "title": "Pacific Northwest Section of SIAM 5th Biennial Meeting",
-      "date": "October 2025",
-      "venue": "",
-      "description": "Invited speaker · Strong Ill-Posedness of the 2D Incompressible Euler Equations in Logarithmically Refined Critical Sobolev Spaces",
-      "url": ""
-    },
-    {
-      "title": "AMS Fall Western Sectional Meeting",
-      "date": "August 2025",
-      "venue": "",
-      "description": "Invited speaker · Strong Ill-Posedness of the 2D Incompressible Euler Equations in Logarithmically Refined Critical Sobolev Spaces",
-      "url": ""
-    },
-    {
-      "title": "9th SIAM Central States Sectional Annual Meeting",
-      "date": "October 2024",
-      "venue": "",
-      "description": "Invited speaker · Singularity Suppression by Rapid Mixing in an Aggregation Equation",
       "url": ""
     }
   ]

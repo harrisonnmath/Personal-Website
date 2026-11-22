@@ -10,7 +10,7 @@
 .research-papers .entry h2{font-size:22px;line-height:1.22;margin:4px 0 5px}
 .research-papers .entry-meta{font-size:14px;line-height:1.4}
 .research-papers .entry>p.entry-status{margin:3px 0;font-size:14px;line-height:1.4}
-.research-papers .entry>p:not(.entry-status){display:none}
+.research-papers .entry>p:not(.entry-status){display:block;margin:7px 0;font-size:16px;line-height:1.5;max-width:900px}
 .research-papers .entry-links{margin-top:7px;gap:6px 20px;line-height:1.4}
 .research-papers .text-link{font-size:14px}
 @media(max-width:620px){.research-papers .entry h2{font-size:21px}.research-papers .entry{padding:12px 0}}

@@ -2,21 +2,13 @@ import assert from 'node:assert/strict';import {readFile,access} from 'node:fs/p
 const d=JSON.parse(await readFile('content.json','utf8'));assert.equal(typeof d.name,'string');assert(d.name.length);assert(d.cards.length>0);assert(!d.cards.some(c=>c.id==='lab'));
 const routes=new Set(['research','teaching','talks','about','contact','sqg','home']);
 for(const c of d.cards){assert(c.id&&c.title&&c.description);assert(['cream','sage','clay'].includes(c.color));assert(['flow','book','talk','curve','nature','mail'].includes(c.illustration));if(c.url.startsWith('#'))assert(routes.has(c.url.slice(1)));else assert(/^https?:\/\//.test(c.url));}
-for(const k of ['papers','courses','talks','conferencesOrganized','conferencesAttended','aboutLinks'])assert(Array.isArray(d[k]));
+for(const k of ['papers','courses','talks','conferencesOrganized','aboutLinks'])assert(Array.isArray(d[k]));
 const paperIds=new Set();
 for(const paper of d.papers){
  if(!paper.detail)continue;
  assert(/^[a-z0-9-]+$/.test(paper.detail),'Paper page IDs must be URL-safe');
  assert(!paperIds.has(paper.detail),'Duplicate paper page ID');paperIds.add(paper.detail);
- const panels=paper.detail==='sqg'?d.paperPanels:paper.explanations;
- for(const key of ['idea','results','proof']){
- assert(Array.isArray(panels?.[key]),'Missing paper explanation: '+paper.detail+'/'+key);
- for(const block of panels[key]){
-  assert(['heading','subheading','paragraph','note','equation','step'].includes(block.type));
-  assert.equal(typeof block.text,'string');
-  if(block.type==='step')assert.equal(typeof block.title,'string');
- }
- }
+ assert.equal(typeof paper.description,'string');
  if(paper.url?.startsWith('assets/')&&paper.url.endsWith('.pdf')){
   const pdf=await readFile(paper.url);assert.equal(pdf.subarray(0,5).toString(),'%PDF-','Invalid PDF: '+paper.url);
  }
