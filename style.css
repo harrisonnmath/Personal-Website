@@ -43,3 +43,14 @@
 @media(min-width:621px){.noticeboard>.pinned-card[href="#research"]{padding-bottom:300px}.noticeboard>.pinned-card[href="#research"]>.line-art{left:50%;right:auto;bottom:28px;transform:translateX(-50%);width:240px;height:260px;max-width:95%}}
 @media(max-width:1000px) and (min-width:621px){.noticeboard{gap:22px 12px}.noticeboard>.pinned-card{min-height:260px}.noticeboard>.pinned-card[href="#research"]{min-height:540px}}
 @media(max-width:620px){.noticeboard{gap:27px;padding:22px 8px 45px}.noticeboard>.pinned-card{--note-x:0px!important;--note-y:0px!important;min-height:220px;padding:29px 23px 100px}.noticeboard>.pinned-card:nth-child(1){--note-angle:-2deg}.noticeboard>.pinned-card:nth-child(2){--note-angle:1.5deg}.noticeboard>.pinned-card:nth-child(3){--note-angle:-1deg}.noticeboard>.pinned-card:nth-child(4){--note-angle:1.5deg}.noticeboard>.pinned-card:nth-child(5){--note-angle:-1.5deg}.noticeboard>.pinned-card h2,.noticeboard>.pinned-card:nth-child(3) h2{font-size:31px}.noticeboard>.pinned-card p,.noticeboard>.pinned-card:nth-child(3) p{font-size:18px;max-width:100%}.noticeboard>.pinned-card>.line-art{width:105px;height:90px;right:20px;bottom:10px}}
+
+/* Rendered paper asset preserves the mockup's physical curl, tape, and texture. */
+.noticeboard>.pinned-card:nth-child(n){background:transparent;border-radius:0;box-shadow:none}
+.noticeboard>.pinned-card::before{content:"";position:absolute;inset:-16% -12%;z-index:-1;pointer-events:none;background:url("assets/sticky-note-paper.webp") center/100% 100% no-repeat}
+.noticeboard>.pinned-card:nth-child(1)::before,.noticeboard>.pinned-card:nth-child(4)::before{filter:hue-rotate(28deg) saturate(.72)}
+.noticeboard>.pinned-card:nth-child(3)::before{filter:hue-rotate(-16deg) saturate(1.2)}
+.noticeboard>.pinned-card::after,.noticeboard>.pinned-card .pin{display:none}
+.noticeboard>.pinned-card:hover,.noticeboard>.pinned-card:focus-visible{box-shadow:none}
+.noticeboard>.pinned-card h2,.noticeboard>.pinned-card p{max-width:96%}
+@media(min-width:1001px){.noticeboard{column-gap:0;row-gap:5px}.noticeboard>.pinned-card{padding-left:26px;padding-right:23px}}
+@media(max-width:620px){.noticeboard>.pinned-card::before{inset:-16% -10%}.noticeboard{padding-inline:15px;gap:35px}}
