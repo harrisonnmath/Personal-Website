@@ -69,6 +69,14 @@ footer{justify-content:flex-end}
 .portrait::before{content:"";position:absolute;z-index:2;left:50%;top:-14px;width:95px;height:31px;transform:translateX(-50%) rotate(-9deg);background:repeating-linear-gradient(92deg,#fff5cf24 0 2px,#a68b5620 2px 3px),linear-gradient(180deg,#e4cf9bbf,#d6bc82b3);clip-path:polygon(2% 0,98% 2%,100% 18%,98% 35%,100% 58%,98% 78%,99% 100%,1% 97%,2% 76%,0 53%,2% 28%);box-shadow:0 1px 2px #59482d24;pointer-events:none}
 @media(max-width:620px){.portrait{flex-basis:108px;padding:7px 7px 25px}.portrait::before{width:58px;height:23px;top:-11px}}
 
+
+/* Exchange the talks and off-the-clock paper colors. */
+.noticeboard>.pinned-card[href="#talks"]::before{filter:hue-rotate(28deg) saturate(.72)}
+.noticeboard>.pinned-card[href="#about"]::before{filter:hue-rotate(-16deg) saturate(1.2)}
+/* Place the water contours in the space before the portrait. */
+.hero-contours{right:245px;top:35px;width:260px;height:220px}
+@media(min-width:621px) and (max-width:1000px){.hero-contours{right:235px;width:200px}}
+
 /* Warm blush background from the approved mockup. */
 body{background-color:#f7ece5;background-image:radial-gradient(ellipse at 45% 0,#fff8ef99,transparent 75%)}
 .site-header,footer{border-color:#b28d62}
