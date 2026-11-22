@@ -24,6 +24,10 @@ Under **Papers & projects**, each paper has an **About the paper & proof** secti
 
 You can also ask Codex to edit `content.json` directly. For design changes ask it to edit `style.css`; for page structure, `app.js`. All six card links are configurable and can point to built-in pages or external URLs. Built-in destinations: `#research`, `#teaching`, `#talks`, `#lab`, `#about`, `#contact`. The SQG explorer lives at `#sqg`.
 
+## Photo notebook
+
+Off the Clock includes a notebook with a cover and photo spreads. In the editor, open **Off the Clock · Photo notebook**, choose **Add photo entry**, upload a JPEG, PNG, or WebP, and write a title and caption. Add an accessible photo description and an optional date or place. **Move earlier/later** changes the order. Uploaded photos are resized and stored with the notebook in `content.json`; you can also enter an `assets/` image path or an HTTPS URL. Save to local files and publish the updated content as usual. For many large photos, use image files in `assets/` to keep the content file small. Visitors turn pages with the buttons, keyboard arrows, or a swipe. On narrow phones, each spread stacks its photo and caption.
+
 ## Profile, CV and PDFs
 
 Add your real profile photo in the editor. Put PDFs into `assets/` and enter a link such as `assets/cv.pdf` or `assets/sqg.pdf`. Email and CV fields start blank intentionally. No complete publication or talk history has been invented. The supplied SQG entry is based on your manuscript. Check all biographical and academic content before public release.

@@ -21,7 +21,10 @@ for(const paper of d.papers){
   const pdf=await readFile(paper.url);assert.equal(pdf.subarray(0,5).toString(),'%PDF-','Invalid PDF: '+paper.url);
  }
 }
-for(const f of ['app.js','editor.js','scripts/serve.mjs','scripts/build.mjs'])execFileSync(process.execPath,['--check',f]);
+assert.equal(typeof d.notebook.title,'string');assert(Array.isArray(d.notebook.pages));
+for(const page of d.notebook.pages){for(const key of ['photo','caption','title','alt','date'])assert.equal(typeof page[key],'string');}
+for(const f of ['app.js','editor.js','notebook.js','scripts/serve.mjs','scripts/build.mjs'])execFileSync(process.execPath,['--check',f]);
 for(const f of ['index.html','editor.html','style.css','README.md','AGENTS.md','.github/workflows/pages.yml','assets/favicon.svg'])await access(f);
 const html=await readFile('index.html','utf8');assert(html.includes('viewport'));assert(html.includes('id="main"'));assert(!/https?:\/\/.*(?:cdn|googleapis)/.test(html));
+execFileSync(process.execPath,['scripts/check-notebook.mjs'],{stdio:'inherit'});
 console.log('Content, navigation destinations, required files and JavaScript syntax passed.');

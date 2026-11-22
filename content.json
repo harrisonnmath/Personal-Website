@@ -331,5 +331,10 @@
         "text": "Iterated norm inflation and stability in an auxiliary Sobolev–Lorentz solution class yield one datum with unbounded norm control on every initial time interval."
       }
     ]
+  },
+  "notebook": {
+    "title": "Off the clock",
+    "subtitle": "Notes from beyond the blackboard",
+    "pages": []
   }
 }
