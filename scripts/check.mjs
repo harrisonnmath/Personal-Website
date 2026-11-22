@@ -1,8 +1,8 @@
 import assert from 'node:assert/strict';import {readFile,access} from 'node:fs/promises';import {execFileSync} from 'node:child_process';
-const d=JSON.parse(await readFile('content.json','utf8'));assert.equal(typeof d.name,'string');assert(d.name.length);assert.equal(d.cards.length,6);
-const routes=new Set(['research','teaching','talks','lab','about','contact','sqg','home']);
+const d=JSON.parse(await readFile('content.json','utf8'));assert.equal(typeof d.name,'string');assert(d.name.length);assert(d.cards.length>0);assert(!d.cards.some(c=>c.id==='lab'));
+const routes=new Set(['research','teaching','talks','about','contact','sqg','home']);
 for(const c of d.cards){assert(c.id&&c.title&&c.description);assert(['cream','sage','clay'].includes(c.color));assert(['flow','book','talk','curve','nature','mail'].includes(c.illustration));if(c.url.startsWith('#'))assert(routes.has(c.url.slice(1)));else assert(/^https?:\/\//.test(c.url));}
-for(const k of ['papers','courses','talks','aboutLinks'])assert(Array.isArray(d[k]));
+for(const k of ['papers','courses','talks','conferencesOrganized','conferencesAttended','aboutLinks'])assert(Array.isArray(d[k]));
 const paperIds=new Set();
 for(const paper of d.papers){
  if(!paper.detail)continue;

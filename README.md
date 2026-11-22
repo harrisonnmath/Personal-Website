@@ -22,7 +22,7 @@ The editor on a static hosted site can preview changes and download an updated `
 
 Under **Papers & projects**, each paper has an **About the paper & proof** section. Edit **The idea**, **Main results**, and **Proof ideas**, including headings, equations, notes, and expandable proof step titles and explanations. These fields use plain text; no HTML is needed. Preview changes and open Research → Explore the paper to review them, then save to local files. The original SQG explanations remain under `paperPanels` in `content.json`; other papers store their own `explanations`. Keep each paper page ID unique. PDF files are stored in `assets/papers/`, with arXiv records linked separately.
 
-You can also ask Codex to edit `content.json` directly. For design changes ask it to edit `style.css`; for page structure, `app.js`. All six card links are configurable and can point to built-in pages or external URLs. Built-in destinations: `#research`, `#teaching`, `#talks`, `#lab`, `#about`, `#contact`. The SQG explorer lives at `#sqg`.
+You can also ask Codex to edit `content.json` directly. For design changes ask it to edit `style.css`; for page structure, `app.js`. All homepage card links are configurable and can point to built-in pages or external URLs. Built-in destinations: `#research`, `#teaching`, `#talks`, `#about`, `#contact`. The SQG explorer lives at `#sqg`.
 
 ## Photo notebook
 
@@ -71,4 +71,4 @@ This local copy retains the original design and content. `.openai/` is ignored f
 
 ## Accessibility and maintenance
 
-Navigation is semantic HTML. Cards are real links. Decorative art is inline SVG; pins and paper surfaces are CSS. Reduced-motion preferences are respected. The layout adapts to phones, tablets and desktops. Keep image files reasonably small. The probability demo assumes independent Poisson goal totals and concerns regulation time only.
+Navigation is semantic HTML. Cards are real links. Decorative art is inline SVG; pins and paper surfaces are CSS. Reduced-motion preferences are respected. The layout adapts to phones, tablets and desktops. Keep image files reasonably small. Teaching history is grouped by institution. Talks use invited/other categories, with separate editable collections for conferences organized and attended.

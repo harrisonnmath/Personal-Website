@@ -5,7 +5,7 @@
   "intro": "Fluid equations, nonlocal interactions, and the influence of geometry.",
   "bio": "I study partial differential equations, with interests in fluid dynamics, regularity and ill-posedness, and aggregation–diffusion equations on curved spaces.",
   "photo": "",
-  "email": "",
+  "email": "nick_harrison@sfu.ca",
   "cv": "assets/CV.pdf",
   "cards": [
     {
@@ -33,14 +33,6 @@
       "color": "cream"
     },
     {
-      "id": "lab",
-      "title": "Math lab",
-      "description": "Interactive mathematical explorations",
-      "url": "#lab",
-      "illustration": "curve",
-      "color": "clay"
-    },
-    {
       "id": "about",
       "title": "Off the clock",
       "description": "Climbing, nature & other interests",
@@ -59,7 +51,7 @@
   ],
   "papers": [
     {
-      "title": "Strong ill-posedness of the surface quasi-geostrophic equations in Wᵏ,¹(ℝ²)",
+      "title": "Strong Ill-Posedness of the Surface Quasi-Geostrophic Equations in Wᵏ,¹(ℝ²)",
       "authors": "Elaine Cozzi, Nicholas Harrison, and Zachary Radke",
       "status": "Manuscript · November 2026",
       "description": "Norm inflation and instantaneous loss of bounded Wᵏ,¹ control for inviscid SQG, for every integer k ≥ 3.",
@@ -231,17 +223,276 @@
   ],
   "courses": [
     {
-      "title": "MATH 303 · Mathematics of Sports",
-      "term": "Simon Fraser University · Fall 2026",
-      "description": "Mathematical models of motion, probability, judging, game theory, and sporting competition.",
+      "institution": "Simon Fraser University",
+      "term": "Fall 2026",
+      "title": "MATH 303 · Mathematical Journeys",
+      "role": "",
+      "description": "",
+      "url": ""
+    },
+    {
+      "institution": "Oregon State University",
+      "term": "Spring 2026",
+      "title": "MTH 341 · Linear Algebra I",
+      "role": "Teaching assistant",
+      "description": "",
+      "url": ""
+    },
+    {
+      "institution": "Oregon State University",
+      "term": "Winter 2026",
+      "title": "MTH 241 · Calculus for Management and Life Sciences",
+      "role": "Teaching assistant",
+      "description": "",
+      "url": ""
+    },
+    {
+      "institution": "Oregon State University",
+      "term": "Fall 2025",
+      "title": "MTH 507 / MTH 511 · Real Analysis Problem Solving Seminar",
+      "role": "Teaching assistant",
+      "description": "",
+      "url": ""
+    },
+    {
+      "institution": "Oregon State University",
+      "term": "Summer 2025",
+      "title": "MTH 231 · Elements of Discrete Mathematics",
+      "role": "Course instructor",
+      "description": "",
+      "url": ""
+    },
+    {
+      "institution": "Oregon State University",
+      "term": "Spring 2025",
+      "title": "MTH 312 · Advanced Calculus II",
+      "role": "Teaching assistant",
+      "description": "",
+      "url": ""
+    },
+    {
+      "institution": "Oregon State University",
+      "term": "Winter 2025",
+      "title": "MTH 311 · Advanced Calculus I",
+      "role": "Teaching assistant",
+      "description": "",
+      "url": ""
+    },
+    {
+      "institution": "Oregon State University",
+      "term": "Fall 2024",
+      "title": "MTH 311 · Advanced Calculus I",
+      "role": "Teaching assistant",
+      "description": "",
+      "url": ""
+    },
+    {
+      "institution": "Oregon State University",
+      "term": "Summer 2024",
+      "title": "MTH 507 · Qualifying Exam Preparation Seminar",
+      "role": "Course instructor",
+      "description": "",
+      "url": ""
+    },
+    {
+      "institution": "Oregon State University",
+      "term": "Spring 2024",
+      "title": "MTH 343 · Introduction to Modern Algebra",
+      "role": "Teaching assistant",
+      "description": "",
+      "url": ""
+    },
+    {
+      "institution": "Oregon State University",
+      "term": "Winter 2024",
+      "title": "MTH 341 · Linear Algebra I",
+      "role": "Teaching assistant",
+      "description": "",
+      "url": ""
+    },
+    {
+      "institution": "Oregon State University",
+      "term": "Fall 2023",
+      "title": "MTH 507 · Real Analysis Problem Solving Seminar; MTH 264/265 · Introduction to Matrix Algebra / Series",
+      "role": "Teaching assistant",
+      "description": "",
+      "url": ""
+    },
+    {
+      "institution": "Oregon State University",
+      "term": "Summer 2023",
+      "title": "MTH 254 · Vector Calculus I",
+      "role": "Course instructor",
+      "description": "",
+      "url": ""
+    },
+    {
+      "institution": "Oregon State University",
+      "term": "Spring 2023",
+      "title": "MTH 312 · Advanced Calculus II",
+      "role": "Teaching assistant",
+      "description": "",
+      "url": ""
+    },
+    {
+      "institution": "Oregon State University",
+      "term": "Winter 2023",
+      "title": "MTH 311 · Advanced Calculus I",
+      "role": "Teaching assistant",
+      "description": "",
+      "url": ""
+    },
+    {
+      "institution": "Oregon State University",
+      "term": "Fall 2022",
+      "title": "MTH 312 · Advanced Calculus II",
+      "role": "Teaching assistant",
+      "description": "",
+      "url": ""
+    },
+    {
+      "institution": "Oregon State University",
+      "term": "Spring 2022",
+      "title": "MTH 251 · Differential Calculus",
+      "role": "Teaching assistant",
+      "description": "",
+      "url": ""
+    },
+    {
+      "institution": "Oregon State University",
+      "term": "Winter 2022",
+      "title": "MTH 251 · Differential Calculus",
+      "role": "Teaching assistant",
+      "description": "",
+      "url": ""
+    },
+    {
+      "institution": "Oregon State University",
+      "term": "Fall 2021",
+      "title": "MTH 112 · Precalculus II: Trigonometry",
+      "role": "Teaching assistant",
+      "description": "",
+      "url": ""
+    },
+    {
+      "institution": "Western Washington University",
+      "term": "Fall 2020",
+      "title": "MATH 112 · Functions and Algebraic Methods",
+      "role": "Course instructor",
+      "description": "",
+      "url": ""
+    },
+    {
+      "institution": "Western Washington University",
+      "term": "Spring 2020",
+      "title": "MATH 112 · Functions and Algebraic Methods",
+      "role": "Course instructor",
+      "description": "",
+      "url": ""
+    },
+    {
+      "institution": "Western Washington University",
+      "term": "Winter 2020",
+      "title": "MATH 112 · Functions and Algebraic Methods",
+      "role": "Course instructor",
+      "description": "",
+      "url": ""
+    },
+    {
+      "institution": "Western Washington University",
+      "term": "Fall 2019",
+      "title": "MATH 112 · Functions and Algebraic Methods",
+      "role": "Course instructor",
+      "description": "",
       "url": ""
     }
   ],
-  "talks": [],
+  "talks": [
+    {
+      "category": "invited",
+      "date": "October 2025",
+      "title": "Strong Ill-Posedness of the 2D Incompressible Euler Equations in Logarithmically Refined Critical Sobolev Spaces",
+      "venue": "Pacific Northwest Section of SIAM 5th Biennial Meeting",
+      "description": "",
+      "url": ""
+    },
+    {
+      "category": "invited",
+      "date": "August 2025",
+      "title": "Strong Ill-Posedness of the 2D Incompressible Euler Equations in Logarithmically Refined Critical Sobolev Spaces",
+      "venue": "AMS Fall Western Sectional Meeting",
+      "description": "",
+      "url": ""
+    },
+    {
+      "category": "invited",
+      "date": "October 2024",
+      "title": "Singularity Suppression by Rapid Mixing in an Aggregation Equation",
+      "venue": "9th SIAM Central States Sectional Annual Meeting",
+      "description": "",
+      "url": ""
+    },
+    {
+      "category": "other",
+      "date": "July 2025",
+      "title": "How to Rearrange a Bookshelf and a Conjecture of Alberto Bressan",
+      "venue": "OSU Graduate Student Seminar",
+      "description": "",
+      "url": ""
+    },
+    {
+      "category": "other",
+      "date": "June 2025",
+      "title": "Constructing Blow-up Solutions to the Incompressible Euler Equations",
+      "venue": "OSU Analysis Seminar",
+      "description": "",
+      "url": ""
+    },
+    {
+      "category": "other",
+      "date": "January 2025",
+      "title": "Conservation Laws Gone Wild — A weird way to destroy solutions to the transport equation",
+      "venue": "OSU Graduate Student Seminar",
+      "description": "",
+      "url": ""
+    },
+    {
+      "category": "other",
+      "date": "July 2024",
+      "title": "Onsager’s Conjecture",
+      "venue": "Graduate Student Seminar",
+      "description": "",
+      "url": ""
+    },
+    {
+      "category": "other",
+      "date": "May 2024",
+      "title": "Mixing Effects on Aggregation",
+      "venue": "OSU Analysis Seminar",
+      "description": "",
+      "url": ""
+    },
+    {
+      "category": "other",
+      "date": "May 2023",
+      "title": "Well-Posedness of 2D Euler Equations in a Critical Sobolev Space",
+      "venue": "OSU Analysis Seminar",
+      "description": "",
+      "url": ""
+    },
+    {
+      "category": "other",
+      "date": "October 2020",
+      "title": "Existence and Regularity of Minimal Surfaces",
+      "venue": "Western Washington University Mathematics Department Colloquium",
+      "description": "",
+      "url": ""
+    }
+  ],
   "about": "Away from mathematics, I enjoy rock climbing, spending time outdoors, and looking for mushrooms. This is a place for occasional photographs and notes from outside the office.",
   "aboutLinks": [],
   "researchIntro": "My research connects the analysis of nonlinear PDEs with the mechanisms that drive concentration, transport, and loss of regularity.",
-  "teachingIntro": "Models become more memorable when you can experiment with them. My teaching connects mathematical ideas with concrete questions, computation, and applications.",
+  "teachingIntro": "Courses I have taught and supported at Simon Fraser University, Oregon State University, and Western Washington University.",
   "paperPanels": {
     "idea": [
       {
@@ -342,5 +593,44 @@
     "title": "Off the clock",
     "subtitle": "Notes from beyond the blackboard",
     "pages": []
-  }
+  },
+  "conferencesOrganized": [
+    {
+      "title": "Math For All Corvallis Conference",
+      "date": "2025",
+      "venue": "Corvallis",
+      "description": "Co-organizer",
+      "url": ""
+    },
+    {
+      "title": "Math For All Corvallis Conference",
+      "date": "2024",
+      "venue": "Corvallis",
+      "description": "Co-organizer",
+      "url": ""
+    }
+  ],
+  "conferencesAttended": [
+    {
+      "title": "Pacific Northwest Section of SIAM 5th Biennial Meeting",
+      "date": "October 2025",
+      "venue": "",
+      "description": "Invited speaker · Strong Ill-Posedness of the 2D Incompressible Euler Equations in Logarithmically Refined Critical Sobolev Spaces",
+      "url": ""
+    },
+    {
+      "title": "AMS Fall Western Sectional Meeting",
+      "date": "August 2025",
+      "venue": "",
+      "description": "Invited speaker · Strong Ill-Posedness of the 2D Incompressible Euler Equations in Logarithmically Refined Critical Sobolev Spaces",
+      "url": ""
+    },
+    {
+      "title": "9th SIAM Central States Sectional Annual Meeting",
+      "date": "October 2024",
+      "venue": "",
+      "description": "Invited speaker · Singularity Suppression by Rapid Mixing in an Aggregation Equation",
+      "url": ""
+    }
+  ]
 }
