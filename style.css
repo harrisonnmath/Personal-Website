@@ -21,3 +21,25 @@
 /* Research spans two rows while retaining a single-card width. */
 @media(min-width:621px){.noticeboard>.pinned-card[href="#research"]{grid-column:auto;grid-row:span 2}.noticeboard>.pinned-card[href="#research"] p{max-width:100%}.noticeboard>.pinned-card[href="#research"]>.line-art{left:50%;right:auto;bottom:30px;transform:translateX(-50%);width:200px;height:200px}}
 @media(max-width:620px){.noticeboard>.pinned-card[href="#research"]{grid-column:auto;grid-row:auto}}
+
+/* Loose paper notes: slight rotation, overlapping corners, and adhesive tabs. */
+.noticeboard{gap:12px 10px;padding:28px 14px 75px;isolation:isolate}
+.noticeboard>.pinned-card{--note-angle:-3deg;--note-x:0px;--note-y:0px;min-height:270px;padding:32px 25px 120px;border:0;border-radius:2px 3px 24px 2px;background-color:#f6edd6;background-image:repeating-linear-gradient(0deg,#745b2203 0 1px,transparent 1px 4px);box-shadow:2px 9px 13px -7px #493c2d60,0 1px 2px #493c2d15;transform:translate(var(--note-x),var(--note-y)) rotate(var(--note-angle));z-index:2}
+.noticeboard>.pinned-card.sage{background-color:#e5e9d1}
+.noticeboard>.pinned-card.clay{background-color:#f1d8c2}
+.noticeboard>.pinned-card:nth-child(1){--note-angle:-4deg;--note-x:-3px;--note-y:5px;z-index:1;background-color:#e1e6cc}
+.noticeboard>.pinned-card:nth-child(2){--note-angle:-5deg;--note-x:-7px;--note-y:1px;z-index:4;background-color:#f7eed8}
+.noticeboard>.pinned-card:nth-child(3){--note-angle:-2deg;--note-x:2px;--note-y:-7px;z-index:3;background-color:#f1d9c5}
+.noticeboard>.pinned-card:nth-child(4){--note-angle:3deg;--note-x:1px;--note-y:-2px;z-index:3;background-color:#e5e9d1}
+.noticeboard>.pinned-card:nth-child(5){--note-angle:4deg;--note-x:3px;--note-y:4px;z-index:5;background-color:#f7eed8}
+.noticeboard>.pinned-card h2,.noticeboard>.pinned-card:nth-child(3) h2{font-size:32px;max-width:100%;line-height:1.08;letter-spacing:-.025em}
+.noticeboard>.pinned-card p,.noticeboard>.pinned-card:nth-child(3) p{font:italic 19px/1.35 var(--serif);margin-top:12px;max-width:100%}
+.noticeboard>.pinned-card>.line-art{right:23px;bottom:15px;width:125px;height:110px;color:#475e3d;opacity:.85;pointer-events:none}
+.noticeboard>.pinned-card:nth-child(3)>.line-art{width:110px;height:95px}
+.noticeboard>.pinned-card::after{content:"";position:absolute;bottom:0;right:0;width:29px;height:29px;border-radius:0 0 22px 0;background:linear-gradient(135deg,#ffffff00 45%,#e1d5b9 48%,#fff9e9 70%);box-shadow:-3px -3px 6px -4px #6c553944;pointer-events:none}
+.noticeboard>.pinned-card .pin{top:-10px;left:calc(50% - 38px);width:76px;height:23px;border-radius:1px;background:repeating-linear-gradient(90deg,#c9ab6655 0 2px,#d8bf8155 2px 5px);box-shadow:0 1px 1px #876c2820;transform:rotate(-4deg);border:1px solid #bfa26520}
+.noticeboard>.pinned-card .pin::after{display:none}
+.noticeboard>.pinned-card:hover,.noticeboard>.pinned-card:focus-visible{z-index:10;transform:translate(var(--note-x),calc(var(--note-y) - 5px)) rotate(0deg);box-shadow:3px 15px 20px -9px #493c2d55}
+@media(min-width:621px){.noticeboard>.pinned-card[href="#research"]{padding-bottom:300px}.noticeboard>.pinned-card[href="#research"]>.line-art{left:50%;right:auto;bottom:28px;transform:translateX(-50%);width:240px;height:260px;max-width:95%}}
+@media(max-width:1000px) and (min-width:621px){.noticeboard{gap:22px 12px}.noticeboard>.pinned-card{min-height:260px}.noticeboard>.pinned-card[href="#research"]{min-height:540px}}
+@media(max-width:620px){.noticeboard{gap:27px;padding:22px 8px 45px}.noticeboard>.pinned-card{--note-x:0px!important;--note-y:0px!important;min-height:220px;padding:29px 23px 100px}.noticeboard>.pinned-card:nth-child(1){--note-angle:-2deg}.noticeboard>.pinned-card:nth-child(2){--note-angle:1.5deg}.noticeboard>.pinned-card:nth-child(3){--note-angle:-1deg}.noticeboard>.pinned-card:nth-child(4){--note-angle:1.5deg}.noticeboard>.pinned-card:nth-child(5){--note-angle:-1.5deg}.noticeboard>.pinned-card h2,.noticeboard>.pinned-card:nth-child(3) h2{font-size:31px}.noticeboard>.pinned-card p,.noticeboard>.pinned-card:nth-child(3) p{font-size:18px;max-width:100%}.noticeboard>.pinned-card>.line-art{width:105px;height:90px;right:20px;bottom:10px}}
