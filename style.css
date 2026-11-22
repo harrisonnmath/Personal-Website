@@ -54,3 +54,7 @@
 .noticeboard>.pinned-card h2,.noticeboard>.pinned-card p{max-width:96%}
 @media(min-width:1001px){.noticeboard{column-gap:0;row-gap:5px}.noticeboard>.pinned-card{padding-left:26px;padding-right:23px}}
 @media(max-width:620px){.noticeboard>.pinned-card::before{inset:-16% -10%}.noticeboard{padding-inline:15px;gap:35px}}
+
+/* Warm blush background from the approved mockup. */
+body{background-color:#f7ece5;background-image:radial-gradient(ellipse at 45% 0,#fff8ef99,transparent 75%)}
+.site-header,footer{border-color:#b28d62}
