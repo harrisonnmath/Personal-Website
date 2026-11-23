@@ -20,7 +20,7 @@ Open `http://127.0.0.1:3000/editor.html`. Edit your introduction, card titles, d
 
 The editor on a static hosted site can preview changes and download an updated `content.json`; it cannot write to GitHub or alter the live site. Replace the local file and commit it to publish. Draft previews use session storage in the current browser; they are not a published or durable source of truth.
 
-Under **Papers & projects**, edit each paper’s **Two-sentence abstract**, citation, and PDF, journal, and arXiv links. Summaries appear directly in the compact research list; there are no proof-exploration tabs.
+Under **Papers & projects**, edit each paper’s **Original abstract**, citation, and PDF, journal, and arXiv links. Each abstract appears in a collapsed **Abstract** dropdown. Use `[citation text](https://…)` for references and `<sup>` / `<sub>` for mathematical notation.
 
 You can also ask Codex to edit `content.json` directly. For design changes ask it to edit `style.css`; for page structure, `app.js`. All homepage card links are configurable and can point to built-in pages or external URLs. Built-in destinations: `#research`, `#teaching`, `#talks`, `#about`, `#contact`.
 

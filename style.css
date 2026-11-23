@@ -94,3 +94,9 @@ body{background-color:#f7ece5;background-image:radial-gradient(ellipse at 45% 0,
 .noticeboard>.pinned-card[href="#research"] h2,.noticeboard>.pinned-card[href="#research"] p{width:100%;max-width:100%;margin-left:auto;margin-right:auto}
 @media(min-width:621px){.noticeboard>.pinned-card[href="#research"]{padding-top:90px;padding-bottom:300px}}
 @media(max-width:620px){.noticeboard>.pinned-card[href="#research"]{padding-top:45px;padding-bottom:120px}.noticeboard>.pinned-card[href="#research"]>.line-art{left:50%;right:auto;transform:translateX(-50%)}}
+
+/* Keep full abstracts tucked into accessible, keyboard-operable disclosures. */
+.research-papers .paper-abstract{margin-top:12px;padding:8px 0;border-top:0}
+.research-papers .paper-abstract summary{font-size:14px;width:fit-content}
+.research-papers .paper-abstract p{line-height:1.7;margin:14px 0 4px;white-space:pre-line}
+.paper-abstract sup,.paper-abstract sub{font-size:.75em;line-height:0}
